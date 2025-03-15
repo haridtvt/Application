@@ -9,6 +9,7 @@ services:
       - MYSQL_ROOT_PASSWORD=pass123 # Sets the root password for MySQL
     networks:
       - sameNetworkAsMysql # Connects the service to the 'sameNetworkAsMysql' network
+    image: "haridtvt/ci-db"
     ports:
       - 3307:3306 # Maps the container's port 3306 to the host's port 3307
     volumes:
