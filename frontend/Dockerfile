@@ -16,6 +16,10 @@ COPY . .
 # Build the React.js application
 RUN npm run build
 
+RUN chmod -R 777 node_modules
+
+RUN ls -lah node_modules/.bin
+
 # Expose the port that the application listens on
 EXPOSE 3001
 
