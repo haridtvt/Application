@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: haridtvt/ci-api:46
+          image: haridtvt/ci-api:3
           ports:
             - containerPort: 3000
           envFrom:
