@@ -17,3 +17,6 @@ spec:
           image: haridtvt/ci-frontend:3
           ports:
             - containerPort: 3000
+      imagePullSecrets:
+        - name: my-docker-secret
+
