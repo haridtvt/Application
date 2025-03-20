@@ -18,5 +18,5 @@ spec:
           ports:
             - containerPort: 3000
       imagePullSecrets:
-        - name: my-docker-secret
+        - name: secrect
 
