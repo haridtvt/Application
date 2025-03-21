@@ -15,8 +15,6 @@ spec:
       containers:
         - name: frontend
           image: haridtvt/ci-frontend:image
-          ports:
-            - containerPort: 3000
       imagePullSecrets:
         - name: secrect
 
