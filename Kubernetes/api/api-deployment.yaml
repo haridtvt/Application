@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api
+  name: api    #name deployment
 spec:
-  replicas: 2
+  replicas: 2    # number replica
   selector:
     matchLabels:
-      app: api
+      app: api       # name pod
   template:
     metadata:
       labels:
-        app: api
+        app: api   
     spec:
       containers:
-        - name: api
+        - name: api           
           image: haridtvt/ci-api:image
           ports:
             - containerPort: 3000
-          envFrom:
+          envFrom:         
             - configMapRef:
                 name: db-config
           env:
